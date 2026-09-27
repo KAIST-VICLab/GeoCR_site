@@ -23,7 +23,7 @@ python3 -m http.server 8000
 
 ```
 index.html                the page (results first: headline figure, interactive gallery and paper figures, quantitative results, then a compact method overview)
-static/css/family.css     styles shared with the GeoSET, GeoCR and MotionMaestro pages (the same file on all three)
+static/css/family.css     styles shared with the other KAIST-VICLab family pages (the same file on each)
 static/js/family.js       scripts shared with those pages: navigation, abstract toggle, pending links, BibTeX copy,
                           image lightbox, tabs, table scroll cues
 static/css/style.css      GeoCR brand colours (top of the file) and the gallery, configuration picker, comparison slider and radar layout
@@ -32,6 +32,7 @@ static/images/            paper figures: *_1200.jpg / *_2000.jpg are inline, *_f
                           cloud_dist_graph_{dists,lpips}.png are the two graph panels, cloud_dist_graph.png their lightbox view;
                           og.jpg (social preview) and the logo files
 static/tiles/             per-method image tiles for the interactive gallery
+static/paper/GeoCR.pdf    the paper (PDF), opened by the Paper button and the navigation bar's Paper link
 ```
 
 ## Logo
@@ -43,7 +44,8 @@ The GeoCR logo is included: `static/images/logo.svg` is the hero title (its text
 
 ## arXiv link
 
-The arXiv ID is not assigned yet. Until it is, the Paper and arXiv buttons, the navigation bar's Paper link, the footer's
-arXiv link and the BibTeX entry hold a placeholder ID; a link that holds it is shown as pending (the Paper and arXiv buttons
-carry a "soon" badge) and does not navigate, with or without JavaScript. The arXiv link will be added once the paper is on arXiv: replacing the placeholder in
+The arXiv ID is not assigned yet. Until it is, the arXiv button, the footer's arXiv link and the BibTeX entry hold a
+placeholder ID; a link that holds it is shown as pending (the arXiv button carries a "soon" badge) and does not navigate,
+with or without JavaScript. The Paper button and the navigation bar's Paper link open the hosted PDF,
+`static/paper/GeoCR.pdf`. The arXiv link will be added once the paper is on arXiv: replacing the placeholder in
 `index.html` with the real ID is enough, and the links then work as normal links. No CSS or JavaScript file needs editing.
