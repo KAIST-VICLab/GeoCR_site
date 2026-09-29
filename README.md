@@ -44,8 +44,6 @@ The GeoCR logo is included: `static/images/logo.svg` is the hero title (its text
 
 ## arXiv link
 
-The arXiv ID is not assigned yet. Until it is, the arXiv button, the footer's arXiv link and the BibTeX entry hold a
-placeholder ID; a link that holds it is shown as pending (the arXiv button carries a "soon" badge) and does not navigate,
-with or without JavaScript. The Paper button and the navigation bar's Paper link open the hosted PDF,
-`static/paper/GeoCR.pdf`. The arXiv link will be added once the paper is on arXiv: replacing the placeholder in
-`index.html` with the real ID is enough, and the links then work as normal links. No CSS or JavaScript file needs editing.
+The paper is on arXiv as [arXiv:2609.32510](https://arxiv.org/abs/2609.32510). The arXiv button, the footer's arXiv link
+and the BibTeX entry point to it. The Paper button and the navigation bar's Paper link open the hosted PDF,
+`static/paper/GeoCR.pdf`.
